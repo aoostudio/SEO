@@ -1,0 +1,52 @@
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "QAPage",
+    "mainEntity": {
+      "@type": "Question",
+      "name": "<?php echo $row_blog['title']; ?>",
+      "text": "<?php echo $row_blog['title']; ?>",
+      "answerCount": 3,
+      "upvoteCount": 26,
+      "dateCreated": "<?php echo $row_blog['date_save']; ?>",
+      "author": {
+        "@type": "Person",
+        "name": "New Baking User"
+      },
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<?php echo $row_blog['markup']; ?>",
+        "dateCreated": "2016-11-02T21:11Z",
+        "upvoteCount": 1337,
+        "url": "https://www.aoostudio.com/single_blog.php?id=<?php echo $row_blog['id']; ?>&<?php echo $row_blog['title']; ?>",
+        "author": {
+          "@type": "Person",
+          "name": "Bank"
+        }
+      },
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "Are you looking for ounces or fluid ounces? If you are looking for fluid ounces there are 15.34 fluid ounces in a pound of water.",
+          "dateCreated": "2016-11-02T21:11Z",
+          "upvoteCount": 42,
+          "url": "https://example.com/question1#suggestedAnswer1",
+          "author": {
+            "@type": "Person",
+            "name": "Aoo"
+          }
+        }, {
+          "@type": "Answer",
+          "text": " I can't remember exactly, but I think 18 ounces in a lb. You might want to double check that.",
+          "dateCreated": "2016-11-06T21:11Z",
+          "upvoteCount": 0,
+          "url": "https://example.com/question1#suggestedAnswer2",
+          "author": {
+            "@type": "Person",
+            "name": "ConfusedUser"
+          }
+        }
+      ]
+    }
+  }
+</script>
